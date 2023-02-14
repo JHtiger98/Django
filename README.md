@@ -9,7 +9,7 @@
 - 새 프로젝트 생성 > 만들기 > OAuth 동의화면 외부 선택 > 앱이름, 이메일
 - 사용자 인증 정보 > 사용자 인증 정보 만들기 > OAuth 클라이언트 ID > 만들기
  - 유형: 웹 애플리케이션, URL: https://127.0.0.1:8000, URI: https://127.0.0.1:8000/accounts/google/login/callback 입력)
-- admin 사이트 > SITES (로컬서버경로 127.0.0.1:8000 local development)
 - navbar {% load socialaccount %}
-- social accounts, social applications
+- admin 사이트 > SITES (로컬서버경로: 127.0.0.1:8000, name: local development)
+- SOCIAL ACCOUNTS > Social applications: google, id, key
 - settings.py > LOGIN_REDIRECT_URL = '/blog/'
