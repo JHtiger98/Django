@@ -1,0 +1,33 @@
+시스템 환경 변수 편집
+C:\Users\admin\anaconda3
+C:\Users\admin\anaconda3\Library\mingw-w64\bin
+C:\Users\admin\anaconda3\Library\usr\bin
+C:\Users\admin\anaconda3\Library\bin
+C:\Users\admin\anaconda3\Scripts
+
+conda create -n (new_env) python=3.8
+conda activate (new_env)
+
+pip install django==3.2
+pip install django-allauth django-crispy-forms django-markdownx
+
+django-admin startproject (new_pro) .
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+python manage.py startapp mypage
+python manage.py startapp homepage
+python manage.py startapp blog
+
+dj_project -> settings.py -> installed_apps = ['blog', 'homepage'] 추가
+
+models.py 수정후 makemigrations 필수
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+
+
+
