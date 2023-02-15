@@ -37,6 +37,7 @@ INSTALLED_APPS = [
 
     'blog',
     'homepage',
+    'ml',
 
     'crispy_forms',
     'markdownx',
